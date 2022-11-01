@@ -4,7 +4,8 @@ from view import View
 
 
 def main():
-    size = 5
+    size = 9
+
     ls = RectangleCreator.get_rectangles(size)
     total_square = Logic.calculate_total_square(ls)
     total_perimetr = Logic.calculate_total_perimetr(ls)

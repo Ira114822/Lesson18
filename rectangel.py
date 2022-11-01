@@ -9,18 +9,16 @@ class Rectangle:
     def calculate_perimetr(self):
         return (self.a + self.b) * 2
 
-    def get_info(self):
+    def __repr__(self):
+        return f"Techical information about instance."
+
+    def __str__(self):
         return f"Rectangle: a = {self.a}, b = {self.b}"
 
     def __del__(self):
         pass
 
+print(Rectangle())
 
-rect1 = Rectangle(10, 20)
-rect2 = Rectangle(15, 10)
-rect3 = Rectangle(20, 10)
-rect4 = Rectangle()
-print(rect1.get_info())
-print(rect2.get_info())
-print(rect3.get_info())
-print(rect4.get_info())
+
+
